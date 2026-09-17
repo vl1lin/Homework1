@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/industry-7553dd2f-7485-43dc-883f-ee1c5b08387f/styles.css">
+  <script src="_ds/industry-7553dd2f-7485-43dc-883f-ee1c5b08387f/_ds_bundle.js"></script>
+  <script src="./image-slot.js"></script>
+  <style>
+    :root{ --type-title:74px; --pad-x:110px; }
+    .corner{ position:absolute; width:16px; height:16px; opacity:.9; }
+    .corner.tl{ top:-1px; left:-1px; border-top:2px solid var(--c); border-left:2px solid var(--c); }
+    .corner.tr{ top:-1px; right:-1px; border-top:2px solid var(--c); border-right:2px solid var(--c); }
+    .corner.bl{ bottom:-1px; left:-1px; border-bottom:2px solid var(--c); border-left:2px solid var(--c); }
+    .corner.br{ bottom:-1px; right:-1px; border-bottom:2px solid var(--c); border-right:2px solid var(--c); }
+    .kicker{ font-family:var(--font-heading); font-size:24px; letter-spacing:0.09em; text-transform:uppercase; margin-bottom:10px; }
+    .h2{ font-family:var(--font-heading); font-weight:600; font-size:44px; line-height:1.1; margin:0; }
+    .bul{ margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:16px; font-size:27px; line-height:1.4; }
+    .bul li{ display:flex; gap:14px; align-items:flex-start; }
+    .bul li .sq{ width:9px; height:9px; flex-shrink:0; margin-top:10px; }
+    .imgframe{ position:relative; background:#ffffff; display:flex; align-items:center; justify-content:center; padding:14px; border:1.5px solid; min-width:0; min-height:0; }
+    .imgframe img{ max-width:100%; max-height:100%; object-fit:contain; display:block; }
+    .footerbar{ position:absolute; left:110px; right:110px; bottom:24px; display:flex; justify-content:space-between; font-family:var(--font-body); font-size:24px; color:var(--color-neutral-600); }
+    .footerbar.on-dark{ color:rgba(242,242,243,.65); }
+    .vyvod{ border-top:2px solid var(--color-accent-700); padding-top:16px; margin-top:auto; font-size:27px; line-height:1.4; }
+    .vyvod b{ font-family:var(--font-heading); font-weight:700; text-transform:uppercase; color:var(--color-accent-700); font-size:24px; letter-spacing:0.04em; }
+    .vyvod.on-dark{ border-top-color:var(--color-accent-300); }
+    .vyvod.on-dark b{ color:var(--color-accent-200); }
+  </style>
+</helmet>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%" data-uneditable="">
+
+<section data-label="Титульный" data-screen-label="01" data-speaker-notes="Добрый день! Тема моей работы — «Освоение месторождений Обско-Тазовской губы». В работе я рассмотрел природные условия региона и особенности освоения трёх газовых и газоконденсатных месторождений на мелководном шельфе Карского моря: Каменномысское-море, Северо-Каменномысское и Обское." style="position:relative; width:100%; height:100%; background:var(--color-accent-900); color:#f2f2f3; font-family:var(--font-body); overflow:hidden;">
+
+  <img src="assets/ris24_foto_platformy.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
+  <div style="position:absolute; inset:0; background:var(--color-accent-900); mix-blend-mode:color; opacity:0.85;"></div>
+  <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,17,18,0.72) 0%, rgba(15,17,18,0.42) 35%, rgba(15,17,18,0.55) 65%, rgba(15,17,18,0.88) 100%);"></div>
+
+  <div style="position:relative; z-index:1; width:100%; height:100%; display:flex; flex-direction:column; padding:64px var(--pad-x) 72px;">
+
+    <div style="display:flex; align-items:center; gap:28px;">
+      <img src="assets/logo-university.png" alt="Губкинский университет" style="height: 78px; display: block; filter: grayscale(1) brightness(1.5) contrast(0.9); mix-blend-mode: multiply; opacity: 0.8; object-fit: contain">
+      <img src="assets/logo-department.png" alt="Кафедра освоения морских нефтегазовых месторождений" style="height:78px; display:block; filter:grayscale(1) brightness(1.5) contrast(0.9); mix-blend-mode:multiply; opacity:0.8;">
+      <div style="font-family:var(--font-body); font-size:26px; line-height:1.35; opacity:.85; max-width:520px;">
+        РГУ нефти и газа (НИУ) имени И.М. Губкина<br>Кафедра освоения морских нефтегазовых месторождений
+      </div>
+    </div>
+
+    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; max-width:1400px;">
+      <div style="align-self:flex-start; font-family:var(--font-heading); font-size:28px; letter-spacing:0.04em; text-transform:uppercase; margin-bottom:36px; text-shadow:0 1px 10px rgba(0,0,0,0.5);">
+        Домашнее задание по дисциплине «Основы освоения морских нефтяных и газовых месторождений»
+      </div>
+      <h1 style="font-family:var(--font-heading); font-weight:700; font-size:var(--type-title); line-height:1.05; margin:0; letter-spacing:0.01em; text-shadow:0 2px 18px rgba(0,0,0,0.5);">Освоение месторождений<br>Обско-Тазовской губы</h1>
+    </div>
+
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; border-top:1px solid rgba(242,242,243,0.35); padding-top:24px; font-family:var(--font-body); font-size:26px;">
+      <div style="opacity:.95; text-shadow:0 1px 8px rgba(0,0,0,0.5);">Выполнил: <span style="opacity:1; font-weight:600;">Бартенев Владислав Максимович</span>, группа РС-23-10</div>
+      <div style="opacity:.95; text-align:right; text-shadow:0 1px 8px rgba(0,0,0,0.5);">Руководитель: <span style="opacity:1; font-weight:600;">Богатырева Елена Дмитриевна</span> · Москва, 2026</div>
+    </div>
+
+  </div>
+
+</section>
+
+<section data-label="Актуальность и цель" data-screen-label="02" data-speaker-notes="Обская и Тазовская губы — крупнейшая транзитная зона «суша–море» на арктическом шельфе России. Начальные суммарные ресурсы газа этой акватории площадью около 90 тысяч квадратных километров превышают 7 триллионов кубометров. Здесь уже открыты и готовятся к освоению месторождения сразу трёх компаний: у «Газпрома» это Каменномысское-море, Северо-Каменномысское, Семаковское и Парусовые месторождения; у «НОВАТЭКа» — Юрхаровское, Северо-Обское и Утреннее; у «Газпром нефти» — Новопортовское. По мере истощения крупнейших сухопутных сеноманских залежей Надым-Пур-Тазовского региона освоение этого мелководного транзитного шельфа рассматривается как один из приоритетных резервов минерально-сырьевой базы российской газовой отрасли. Отсюда и цель моей работы — рассмотреть природно-климатические условия региона и особенности освоения трёх названных месторождений: геологическую характеристику, обустройство, режимы разработки и трудности освоения." style="position:relative; width:100%; height:100%; background:var(--color-accent-900); color:var(--color-text); font-family:var(--font-body); overflow:hidden; display:flex; flex-direction:column;">
+
+  <div style="background:var(--color-bg); padding:70px var(--pad-x) 0;">
+    <div class="kicker" style="color:var(--color-accent-700);">Введение</div>
+    <h2 class="h2" style="font-size:50px; margin-bottom:24px; max-width:1500px;">Актуальность и цель работы</h2>
+  </div>
+
+  <div style="position:relative; flex:1; background:var(--color-accent-900); color:#f2f2f3; padding:36px var(--pad-x) 0; display:flex; gap:60px; max-width:100%; min-height:0;">
+    <div style="flex:1; display:flex; flex-direction:column; gap:22px; min-width:0;">
+      <div style="font-family:var(--font-heading); font-size:24px; letter-spacing:0.08em; text-transform:uppercase; color:var(--color-accent-200);">Актуальность</div>
+      <ul class="bul">
+        <li><span class="sq" style="background:var(--color-accent-200);"></span><span>Обская и Тазовская губы — крупнейшая транзитная зона «суша–море» на арктическом шельфе России</span></li>
+        <li><span class="sq" style="background:var(--color-accent-200);"></span><span>Площадь ~90 тыс. км², ресурсы газа &gt; 7 трлн м³</span></li>
+        <li><span class="sq" style="background:var(--color-accent-200);"></span><span>Месторождения Газпрома, НОВАТЭКа, Газпром нефти</span></li>
+      </ul>
+      <div style="border:1.5px solid rgba(242,242,243,0.4); padding:22px 26px; margin-top:auto; margin-bottom:56px;">
+        <div style="font-family:var(--font-heading); font-size:24px; letter-spacing:0.06em; text-transform:uppercase; color:var(--color-accent-200); margin-bottom:10px;">Цель работы</div>
+        <div style="font-size:27px; line-height:1.4;">Рассмотреть природные условия региона и особенности освоения месторождений Каменномысское-море, Северо-Каменномысское и Обское</div>
+      </div>
+    </div>
+    <div style="flex:1.5; display:flex; align-items:center; padding-bottom:56px;">
+      <div class="imgframe" style="width:100%; height:100%; border-color:rgba(242,242,243,0.4);">
+        <img src="assets/ris01_karta_tranzitnyh_zon.png" alt="Карта транзитных зон арктического шельфа" style="width: 988px; height: 675px; object-fit: fill">
+      </div>
+    </div>
+  </div>
+
+  <svg viewBox="0 0 1920 96" preserveAspectRatio="none" style="display:block; width:100%; height:96px;">
+    <polygon points="0,96 0,48 80,8 160,48 240,8 320,48 400,8 480,48 560,8 640,48 720,8 800,48 880,8 960,48 1040,8 1120,48 1200,8 1280,48 1360,8 1440,48 1520,8 1600,48 1680,8 1760,48 1840,8 1920,48 1920,96" fill="var(--color-accent-900)"></polygon>
+  </svg>
+
+</section>
+
+<section data-label="Мелководье" data-screen-label="03" data-speaker-notes="Начну с природных условий региона, потому что именно они определяют практически все технические решения, о которых пойдёт речь дальше. Первая и главная особенность — предельное мелководье: глубины в районе Каменномысского-моря составляют 5–12, местами до 17 метров, у Северо-Каменномысского — от 4 до 15 метров. Это сразу исключает применение стандартных для морской нефтегазодобычи оснований, рассчитанных на большие глубины." style="position:relative; width:100%; height:100%; background:var(--color-accent-900); color:#f2f2f3; font-family:var(--font-body); overflow:hidden; padding:80px 130px 0; display:flex; gap:70px; align-items:stretch;">
+
+  <svg viewBox="0 0 1920 1080" style="position:absolute; inset:0; width:100%; height:100%; pointer-events:none;">
+    <defs>
+      <pattern id="trussH3" width="180" height="70" patternUnits="userSpaceOnUse">
+        <line x1="0" y1="6" x2="180" y2="6" style="stroke:var(--color-neutral-500); stroke-width:5"></line>
+        <line x1="0" y1="64" x2="180" y2="64" style="stroke:var(--color-neutral-500); stroke-width:5"></line>
+        <line x1="0" y1="6" x2="180" y2="64" style="stroke:var(--color-neutral-500); stroke-width:5"></line>
+        <line x1="0" y1="64" x2="180" y2="6" style="stroke:var(--color-neutral-500); stroke-width:5"></line>
+      </pattern>
+    </defs>
+    <rect x="0" y="0" width="1920" height="70" fill="url(#trussH3)"></rect>
+    <rect x="0" y="1010" width="1920" height="70" fill="url(#trussH3)"></rect>
+  </svg>
+
+  <div style="position:relative; flex:1; display:flex; flex-direction:column; justify-content:center; padding:96px 0;">
+    <div class="kicker" style="color:var(--color-accent-200);">Природные условия</div>
+    <h2 class="h2" style="color:#f2f2f3; margin-bottom:24px;">Предельное мелководье</h2>
+    <ul class="bul">
+      <li><span class="sq" style="background:var(--color-accent-200);"></span><span>Каменномысское-море: 5–12, местами до 17 м</span></li>
+      <li><span class="sq" style="background:var(--color-accent-200);"></span><span>Северо-Каменномысское: 4–15 м</span></li>
+      <li><span class="sq" style="background:var(--color-accent-200);"></span><span>Тазовская губа: 1–11 м</span></li>
+    </ul>
+    <div class="vyvod on-dark" style="margin-bottom:80px;"><b>→</b> исключает стандартные морские основания</div><span style="font-size: 24px">03 / 17</span><span style="font-size: 24px">Обско-Тазовская губа · Природные условия</span>
+  </div>
+  <div style="position: relative; flex: 1.4; padding: 96px 0; width: 228px; height: 915px">
+    
+  </div><div class="imgframe" style="width: 1146px; height: 865px; border-color: rgba(242,242,243,0.5)">
+      <i class="corner tl" style="--c:#f2f2f3"></i><i class="corner tr" style="--c:#f2f2f3"></i><i class="corner bl" style="--c:#f2f2f3"></i><i class="corner br" style="--c:#f2f2f3"></i>
+      
+    <img src="assets/ris04_donnye_otlozheniya.png" alt="Донные отложения акватории" style="width: 835px; height: 803px"></div>
+
+  <div class="footerbar on-dark"></div>
+</section>
+
+<section data-label="Климат и лёд" data-screen-label="04" data-speaker-notes="Вторая особенность — суровый арктический климат. Средняя температура января — минус 27 градусов, абсолютный минимум достигает минус 55, по данным «Газпрома» — даже минус 60 градусов. Третья особенность — короткий период открытой воды: навигация возможна в среднем 3,5–4 месяца в год, ледовый период — до 300 суток. Толщина льда к концу мая — 140–170 сантиметров, а в тяжёлые сезоны — до 1,85, местами до 2,5 метра. Постоянные подвижки ледовых полей вызывают ледовое выпахивание дна — на глубинах 8–11 метров отдельные борозды достигают длины более километра." style="position:relative; width:100%; height:100%; background:var(--color-accent-900); color:#f2f2f3; font-family:var(--font-body); overflow:hidden; padding:80px 130px 0; display:flex; gap:70px; align-items:stretch;">
+
+  <svg viewBox="0 0 1920 1080" style="position:absolute; inset:0; width:100%; height:100%; pointer-events:none;">
+    <defs>
+      <pattern id="trussH4" width="180" height="70" patternUnits="userSpaceOnUse">
+        <line x1="0" y1="6" x2="180" y2="6" style="stroke:var(--color-neutral-500); stroke-width:5"></line>
+        <line x1="0" y1="64" x2="180" y2="64" style="stroke:var(--color-neutral-500); stroke-width:5"></line>
+        <line x1="0" y1="6" x2="180" y2="64" style="stroke:var(--color-neutral-500); stroke-width:5"></line>
+        <line x1="0" y1="64" x2="180" y2="6" style="stroke:var(--color-neutral-500); stroke-width:5"></line>
+      </pattern>
+    </defs>
+    <rect x="0" y="0" width="1920" height="70" fill="url(#trussH4)"></rect>
+    <rect x="0" y="1010" width="1920" height="70" fill="url(#trussH4)"></rect>
+  </svg>
+
+  <div style="position: relative; flex: 1.4; padding: 96px 0; width: 918px; height: 888px">
+    
+  <div class="imgframe" style="width: 933px; height: 783px; border-color: rgba(242,242,243,0.5)">
+      <i class="corner tl" style="--c:#f2f2f3"></i><i class="corner tr" style="--c:#f2f2f3"></i><i class="corner bl" style="--c:#f2f2f3"></i><i class="corner br" style="--c:#f2f2f3"></i>
+      <img src="assets/ris43_ledovye_usloviya.png" alt="Ледовые условия: толщина льда и продолжительность навигации">
+    </div></div>
+  <div style="position:relative; flex:1; display:flex; flex-direction:column; justify-content:center; padding:96px 0;">
+    <div class="kicker" style="color:var(--color-accent-200);">Природные условия</div>
+    <h2 class="h2" style="color:#f2f2f3; margin-bottom:24px;">Климат и ледовый режим</h2>
+    <ul class="bul">
+      <li><span class="sq" style="background:var(--color-accent-200);"></span><span>Январь: −27 °C, экстремум −55…−60 °C</span></li>
+      <li><span class="sq" style="background:var(--color-accent-200);"></span><span>Навигация: 3,5–4 месяца в году</span></li>
+      <li><span class="sq" style="background:var(--color-accent-200);"></span><span>Ледовый период: до 300 суток</span></li>
+      <li><span class="sq" style="background:var(--color-accent-200);"></span><span>Толщина льда к концу мая: 1,4–1,85 (до 2,5) м</span></li>
+    </ul>
+  </div>
+
+  <div class="footerbar on-dark"><span>Обско-Тазовская губа · Природные условия</span><span>04 / 17</span></div>
+</section>
+
+<section data-label="Грунты и мерзлота" data-screen-label="05" data-speaker-notes="Дно губ сложено преимущественно илами и сильносжимаемыми глинистыми грунтами текучей консистенции с низкой несущей способностью — мощность таких отложений оценивается в 13–15 метров. Отдельная специфика региона — реликтовые многолетнемёрзлые породы: из порядка 150 пробуренных инженерно-геологических скважин мерзлота вскрыта лишь в четырёх, то есть распространена крайне неравномерно, и представлена двумя разными типами — холодным устойчивым прибрежным и более тёплым, деградирующим островным." style="position:relative; width:100%; height:100%; background:var(--color-bg); color:var(--color-text); font-family:var(--font-body); overflow:hidden; padding:70px 110px 0; display:flex; flex-direction:column;">
+
+  <div class="kicker" style="color:var(--color-accent-700);">Природные условия</div>
+  <h2 class="h2" style="margin-bottom:24px;">Грунты и многолетняя мерзлота</h2>
+
+  <div style="flex:1; display:flex; gap:60px; min-height:0; padding-bottom:70px;">
+    <div style="flex:0.85; display:flex; flex-direction:column; justify-content:center;">
+      <ul class="bul">
+        <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Илы мощностью 13–15 м, низкая несущая способность</span></li>
+        <li><span class="sq" style="background:var(--color-accent-500);"></span><span>ММП вскрыта лишь в 4 из ~150 скважин — распространена крайне неравномерно</span></li>
+        <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Два типа: прибрежный голоценовый (холодный, устойчивый) и островной сартанский (тёплый, деградирующий) криореликт</span></li>
+      </ul>
+    </div>
+    <div style="flex:1.5;">
+      <div class="imgframe" style="width:100%; height:100%; border-color:var(--color-neutral-400);">
+        <i class="corner tl" style="--c:var(--color-accent-700)"></i><i class="corner tr" style="--c:var(--color-accent-700)"></i><i class="corner bl" style="--c:var(--color-accent-700)"></i><i class="corner br" style="--c:var(--color-accent-700)"></i>
+        <img src="assets/ris08_mmp_sostav.png" alt="Состав и распространение многолетнемёрзлых пород" style="width: 1043px; height: 823px">
+      </div>
+    </div>
+  </div>
+
+  <div class="footerbar"><span>Обско-Тазовская губа · Природные условия</span><span>05 / 17</span></div>
+</section>
+
+<section data-label="Приповерхностный газ" data-screen-label="06" data-speaker-notes="И, наконец, один из ключевых геологических рисков региона — приповерхностный газ: скопления свободного газа в придонной части разреза, на глубинах до 500–900 метров, в виде так называемых «газовых труб», «карманов» и «грифонов». При инженерно-геологическом бурении на Ямале с подобными интервалами уже были связаны случаи выбросов газоводяной смеси и открытого фонтанирования скважин. Этот риск оказался главной геологической трудностью для Обского месторождения." style="position:relative; width:100%; height:100%; background:var(--color-bg); color:var(--color-text); font-family:var(--font-body); overflow:hidden; padding:70px 110px 0; display:flex; flex-direction:column;">
+
+  <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:60px; margin-bottom:28px;">
+    <div>
+      <div class="kicker" style="color:var(--color-accent-700);">Природные условия</div>
+      <h2 class="h2">Приповерхностный газ</h2>
+    </div>
+    <ul class="bul" style="flex-shrink:0; max-width:760px; padding-top:6px;">
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Свободный газ на глубинах 500–900 м («газовые трубы», «карманы», «грифоны»)</span></li>
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Известны случаи выбросов газоводяной смеси и открытого фонтанирования на Ямале — ключевой риск при бурении</span></li>
+    </ul>
+  </div>
+
+  <div style="flex:1; min-height:0; padding-bottom:70px;">
+    <div class="imgframe" style="width:100%; height:100%; border-color:var(--color-neutral-400);">
+      <i class="corner tl" style="--c:var(--color-accent-700)"></i><i class="corner tr" style="--c:var(--color-accent-700)"></i><i class="corner bl" style="--c:var(--color-accent-700)"></i><i class="corner br" style="--c:var(--color-accent-700)"></i>
+      <img src="assets/ris40_anomalii_gaz.png" alt="Аномалии приповерхностного газа" style="width: 1689px; height: 735px">
+    </div>
+  </div>
+
+  <div class="footerbar"><span>Обско-Тазовская губа · Природные условия</span><span>06 / 17</span></div>
+</section>
+
+<section data-label="Обзор месторождений" data-screen-label="07" data-speaker-notes="В акватории Обской и Тазовской губ к настоящему времени открыто не менее пяти месторождений. Суммарные запасы газа по первым четырём из них, разведанным «Газфлотом», оцениваются на уровне 800 миллиардов кубометров. В проектных материалах по транспортно-логистическому обеспечению фигурирует уже целый кластер из семи объектов. В своей работе я подробно рассмотрел три месторождения — Каменномысское-море, Северо-Каменномысское и Обское." style="position:relative; width:100%; height:100%; overflow:hidden; font-family:var(--font-body); color:#1d1f20;">
+
+  <div style="position:relative; z-index:1; width:100%; height:100%; display:flex; gap:60px; align-items:stretch; padding:80px 110px 0;">
+    <div style="flex:1; display:flex; flex-direction:column; justify-content:center;">
+      <div class="kicker" style="color:var(--color-accent-700);">Обзор</div>
+      <h2 class="h2" style="margin-bottom:24px;">Месторождения региона</h2>
+      <ul class="bul">
+        <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Открыто не менее 5 месторождений: Каменномысское-море · Северо-Каменномысское · Обское · Чугорьяхинское · Семаковское (запасы первых четырёх ≈ 800 млрд м³)</span></li>
+        <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Кластер единого освоения — 7 объектов (+ Тота-Яхинское, Антипаютинское, Парусовые)</span></li>
+        <li><span class="sq" style="background:var(--color-accent-500);"></span><span>В работе подробно рассмотрены три: Каменномысское-море, Северо-Каменномысское, Обское</span></li>
+      </ul>
+    </div>
+    <div style="flex:1.3; min-height:0; padding-bottom:80px;">
+      <div class="imgframe" style="width:100%; height:100%; border-color:var(--color-neutral-400);">
+        <i class="corner tl" style="--c:var(--color-accent-700)"></i><i class="corner tr" style="--c:var(--color-accent-700)"></i><i class="corner bl" style="--c:var(--color-accent-700)"></i><i class="corner br" style="--c:var(--color-accent-700)"></i>
+        <img src="assets/ris14_karta_mestorozhdeniy.png" alt="Карта месторождений региона" style="width: 904px; height: 894px">
+      </div>
+    </div>
+  </div>
+
+  <div class="footerbar"><span>Обско-Тазовская губа · Обзор месторождений</span><span>07 / 17</span></div>
+</section>
+
+<section data-label="КМ-море: геология" data-screen-label="08" data-speaker-notes="Каменномысское-море — головной объект кластера и, по величине запасов, уникальное месторождение: геологические запасы по сумме категорий С1 и С2 оцениваются в 555 миллиардов кубометров. Добываемый газ отличается очень высокой чистотой — содержание метана не менее 99,2 процента, что упрощает промысловую подготовку." style="position:relative; width:100%; height:100%; background:var(--color-bg); color:var(--color-text); font-family:var(--font-body); overflow:hidden; padding:70px 110px 0; display:flex; gap:60px; align-items:stretch;">
+
+  <div style="flex:0.85; display:flex; flex-direction:column; justify-content:center;">
+    <div class="kicker" style="color:var(--color-accent-700);">Каменномысское-море</div>
+    <h2 class="h2" style="margin-bottom:24px;">Головной объект кластера</h2>
+    <div style="display:flex; align-items:baseline; gap:16px; margin-bottom:24px;">
+      <div style="font-family:var(--font-heading); font-weight:700; font-size:108px; line-height:1; color:var(--color-accent-700);">555</div>
+      <div style="font-size:26px; line-height:1.3; max-width:220px;">млрд м³ запасов (С1+С2) — уникальное по величине</div>
+    </div>
+    <ul class="bul">
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Чистота газа: метан ≥ 99,2 %</span></li>
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Открыто в 2000 г.</span></li>
+    </ul>
+  </div>
+
+  <div style="flex:1.5; min-height:0; padding-bottom:70px;">
+    <div class="imgframe" style="width:100%; height:100%; border-color:var(--color-neutral-400);">
+      <i class="corner tl" style="--c:var(--color-accent-700)"></i><i class="corner tr" style="--c:var(--color-accent-700)"></i><i class="corner bl" style="--c:var(--color-accent-700)"></i><i class="corner br" style="--c:var(--color-accent-700)"></i>
+      <img src="assets/ris15_karta_km_more.png" alt="Карта месторождения Каменномысское-море" style="width: 1101px; height: 971px">
+    </div>
+  </div>
+
+  <div class="footerbar"><span>Каменномысское-море · Геологическая характеристика</span><span>08 / 17</span></div>
+</section>
+
+<section data-label="КМ-море: обустройство" data-screen-label="09" data-speaker-notes="Технической основой обустройства выбрана ледостойкая стационарная платформа в сочетании с автономными блоками-кондукторами. С самой платформы бурятся 33 основные наклонно-направленные скважины, ещё 22 размещаются на сателлитных блоках-кондукторах — итого проектный фонд составляет 55 скважин. Проектный уровень добычи — 15 миллиардов кубометров газа в год в течение 13 лет непрерывной эксплуатации." style="position:relative; width:100%; height:100%; background:var(--color-bg); color:var(--color-text); font-family:var(--font-body); overflow:hidden; padding:60px 110px 0; display:flex; flex-direction:column;">
+
+  <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:50px; margin-bottom:20px;">
+    <div>
+      <div class="kicker" style="color:var(--color-accent-700);">Каменномысское-море</div>
+      <h2 class="h2">Схема обустройства</h2>
+    </div>
+    <ul class="bul" style="flex-shrink:0; max-width:1100px; padding-top:4px;">
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>ЛСП + автономные блоки-кондукторы (ЛБК)</span></li>
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>33 скважины с платформы + 22 со спутниковых ЛБК = 55 скважин фонда</span></li>
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Добыча: 15 млрд м³/год, 13 лет</span></li>
+    </ul>
+  </div>
+
+  <div style="flex:1; display:flex; flex-direction:column; gap:24px; min-height:0; padding-bottom:60px;">
+    <div style="flex:1; min-height:0;">
+      <div class="imgframe" style="width:100%; height:100%; border-color:var(--color-neutral-400);">
+        <i class="corner tl" style="--c:var(--color-accent-700)"></i><i class="corner tr" style="--c:var(--color-accent-700)"></i><i class="corner bl" style="--c:var(--color-accent-700)"></i><i class="corner br" style="--c:var(--color-accent-700)"></i>
+        <img src="assets/ris21_proekt_lsp.jpg" alt="Проект ледостойкой стационарной платформы" style="width: 1646px; height: 563px; object-fit: fill">
+      </div>
+    </div>
+    <div style="flex:1; min-height:0;">
+      <div class="imgframe" style="width:100%; height:100%; border-color:var(--color-neutral-400);">
+        <i class="corner tl" style="--c:var(--color-accent-700)"></i><i class="corner tr" style="--c:var(--color-accent-700)"></i><i class="corner bl" style="--c:var(--color-accent-700)"></i><i class="corner br" style="--c:var(--color-accent-700)"></i>
+        <img src="assets/ris23_proekt_blok_konduktor.jpg" alt="Проект ледостойкого блока-кондуктора" style="width: 1663px; height: 360px; object-fit: fill">
+      </div>
+    </div>
+  </div>
+
+  <div class="footerbar"><span>Каменномысское-море · Обустройство</span><span>09 / 17</span></div>
+</section>
+
+<section data-label="Опорное основание" data-screen-label="10" data-speaker-notes="Отдельно хочу остановиться на инженерном решении по форме опорного основания платформы. Специалисты подобрали угол наклона граней в 51 градус не произвольно, а по расчётам: при таком угле лёд разрушается изгибом, а не сжатием, а изгибная прочность льда в 4–5 раз ниже прочности на сжатие. Крепление платформы на илистом дне обеспечено 56 сваями диаметром более двух метров, погружаемыми на глубину 47 метров." style="position:relative; width:100%; height:100%; background:#ffffff; color:#1d1f20; font-family:var(--font-body); overflow:hidden; padding:60px 100px 0; display:flex; flex-direction:column;">
+
+  <svg viewBox="0 0 1920 1080" style="position:absolute; inset:0; width:100%; height:100%;">
+    <defs>
+      <pattern id="grid10" width="42" height="42" patternUnits="userSpaceOnUse">
+        <path d="M42,0 L0,0 0,42" style="fill:none; stroke:#1d1f20; stroke-width:1; opacity:0.16"></path>
+      </pattern>
+    </defs>
+    <rect x="60" y="60" width="1800" height="960" style="fill:url(#grid10); stroke:#1d1f20; stroke-width:2;"></rect>
+  </svg>
+
+  <div style="position:relative; display:flex; justify-content:space-between; align-items:flex-start; gap:50px;">
+    <div>
+      <div class="kicker" style="color:#1d1f20;">Каменномысское-море</div>
+      <h2 class="h2">Опорное основание платформы</h2>
+    </div>
+    <div style="display:flex; gap:50px; background:#ffffff; padding:6px 0;">
+      <div><div style="font-family:var(--font-heading); font-weight:700; font-size:56px; color:var(--color-accent-700); line-height:1;">51°</div><div style="font-size:24px; opacity:.7;">угол граней</div></div>
+      <div><div style="font-family:var(--font-heading); font-weight:700; font-size:56px; color:var(--color-accent-700); line-height:1;">56</div><div style="font-size:24px; opacity:.7;">свай, Ø&gt;2 м</div></div>
+      <div><div style="font-family:var(--font-heading); font-weight:700; font-size:56px; color:var(--color-accent-700); line-height:1;">47 м</div><div style="font-size:24px; opacity:.7;">глубина забивки</div></div>
+      <div><div style="font-family:var(--font-heading); font-weight:700; font-size:56px; color:var(--color-accent-700); line-height:1;">40k т</div><div style="font-size:24px; opacity:.7;">масса платформы</div></div>
+    </div>
+  </div>
+
+  <div style="position:relative; flex:1; display:flex; align-items:center; justify-content:center; padding:36px 0 60px;">
+    <div class="imgframe" style="width:100%; height:100%; border-color:#1d1f20;">
+      <i class="corner tl" style="--c:#1d1f20"></i><i class="corner tr" style="--c:#1d1f20"></i><i class="corner bl" style="--c:#1d1f20"></i><i class="corner br" style="--c:#1d1f20"></i>
+      <img src="assets/ris25_shema_osnovaniya.png" alt="Схема опорного основания платформы" style="width: 1748px; height: 790px">
+    </div>
+  </div>
+
+  <div class="footerbar" style="color:#1d1f20;"><span>Каменномысское-море · Инженерное решение</span><span>10 / 17</span></div>
+</section>
+
+<section data-label="Трудности освоения" data-screen-label="11" data-speaker-notes="Технические трудности здесь типичны для мелководного арктического шельфа в целом. А вот самая значимая трудность последних лет оказалась не природной, а экономико-политической. Изначально ввод месторождения планировался на 2025 год. Из-за ухода иностранных партнёров сроки были сдвинуты на 2035 год. При этом сама платформа спроектирована и построена силами исключительно российских организаций по принципу «распределённой верфи», задействовано около семи тысяч специалистов. Перенос сроков связан не с зависимостью конструкции от иностранных комплектующих, а с более широким кругом партнёрских договорённостей." style="position:relative; width:100%; height:100%; background:var(--color-accent-900); color:#f2f2f3; font-family:var(--font-body); overflow:hidden; padding:70px 110px 0; display:flex; flex-direction:column;">
+
+  <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:50px; margin-bottom:24px;">
+    <div>
+      <div class="kicker" style="color:var(--color-accent-200);">Каменномысское-море</div>
+      <h2 class="h2" style="color:#f2f2f3;">Главная трудность — не природная</h2>
+    </div>
+    <ul class="bul" style="flex-shrink:0; max-width:820px; padding-top:4px;">
+      <li><span class="sq" style="background:var(--color-accent-200);"></span><span>План: ввод 2025 г., буксировка платформы — 2024 г.</span></li>
+      <li><span class="sq" style="background:var(--color-accent-200);"></span><span>Уход иностранных партнёров → перенос на 2035 г. (сдвиг на 10 лет)</span></li>
+      <li><span class="sq" style="background:var(--color-accent-200);"></span><span>Построена силами российских организаций («распределённая верфь», ~7000 специалистов)</span></li>
+    </ul>
+  </div>
+
+  <div style="flex:1; min-height:0; padding-bottom:36px;">
+    <div class="imgframe" style="width:100%; height:100%; border-color:rgba(242,242,243,0.5);">
+      <i class="corner tl" style="--c:#f2f2f3"></i><i class="corner tr" style="--c:#f2f2f3"></i><i class="corner bl" style="--c:#f2f2f3"></i><i class="corner br" style="--c:#f2f2f3"></i>
+      <img src="assets/ris46_hronologiya.png" alt="Хронология сроков ввода месторождения">
+    </div>
+  </div>
+  <div class="vyvod on-dark" style="margin-top:0; margin-bottom:74px;"><b>Вывод:</b> риск международной кооперации оказался значимее природных и технических трудностей</div>
+
+  <div class="footerbar on-dark"><span>Каменномысское-море · Трудности освоения</span><span>11 / 17</span></div>
+</section>
+
+<section data-label="Северо-Каменномысское" data-screen-label="12" data-speaker-notes="Северо-Каменномысское — второй по величине объект кластера, с запасами 350 миллиардов кубометров, из них 253,9 миллиарда — по категориям С1 плюс С2. Открыто практически одновременно с Каменномысским-морем, в 2000 году. Схема обустройства повторяет решения головного объекта, но освоение начинается вслед за вводом Каменномысского-моря. Раз ввод головного объекта перенесён на 2035 год, разумно ожидать аналогичного сдвига и здесь, хотя прямого подтверждения новой даты в источниках нет." style="position:relative; width:100%; height:100%; background:var(--color-bg); color:var(--color-text); font-family:var(--font-body); overflow:hidden; padding:60px 90px 0; display:flex; gap:34px; align-items:stretch;">
+
+  <div style="flex:0.62; min-height:0; padding-bottom:60px;">
+    <div class="imgframe" style="width:100%; height:100%; border-color:var(--color-neutral-400);">
+      <i class="corner tl" style="--c:var(--color-accent-700)"></i><i class="corner tr" style="--c:var(--color-accent-700)"></i><i class="corner bl" style="--c:var(--color-accent-700)"></i><i class="corner br" style="--c:var(--color-accent-700)"></i>
+      <img src="assets/ris32_razrez_skm1.png" alt="Геологический разрез скважины Северо-Каменномысская №1" style="width: 445px; height: 915px">
+    </div>
+  </div>
+
+  <div style="flex:1; display:flex; flex-direction:column; justify-content:center;">
+    <div class="kicker" style="color:var(--color-accent-700);">Месторождения-спутники</div>
+    <h2 class="h2" style="margin-bottom:24px;">Северо-Каменномысское</h2>
+    <ul class="bul">
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Запасы: 350 млрд м³ (253,9 млрд — С1+С2)</span></li>
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Второй по величине объект кластера, открыто в 2000 г.</span></li>
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Обустройство — вслед за головным объектом (общая инфраструктура)</span></li>
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Даты ввода нет — ожидается сдвиг по аналогии с 2035 г.</span></li>
+    </ul>
+  </div>
+
+  <div style="flex:0.62; min-height:0; padding-bottom:60px;">
+    <div class="imgframe" style="width:100%; height:100%; border-color:var(--color-neutral-400);">
+      <i class="corner tl" style="--c:var(--color-accent-700)"></i><i class="corner tr" style="--c:var(--color-accent-700)"></i><i class="corner bl" style="--c:var(--color-accent-700)"></i><i class="corner br" style="--c:var(--color-accent-700)"></i>
+      <img src="assets/ris33_produktivny_plast_skm1.png" alt="Продуктивный пласт скважины Северо-Каменномысская №1" style="width: 450px; height: 956px">
+    </div>
+  </div>
+
+  <div class="footerbar"><span>Северо-Каменномысское месторождение</span><span>12 / 17</span></div>
+</section>
+
+<section data-label="Обское" data-screen-label="13" data-speaker-notes="Обское — самое компактное из трёх рассмотренных месторождений: проектное решение — блок-кондуктор всего с тремя скважинами суммарной длиной около 8 километров. Отдельной оценки запасов и года открытия найти не удалось. Зато именно для Обского источники дают самую детальную геофизическую характеристику приповерхностного газа: в скважине Обская №1 выявлены два аномальных интервала — на 408 метрах и на 448 метрах, — чьё сопротивление сопоставимо с сопротивлением заведомо газонасыщенного продуктивного пласта. Ключевая трудность освоения Обского — именно геологическая." style="position:relative; width:100%; height:100%; background:var(--color-bg); color:var(--color-text); font-family:var(--font-body); overflow:hidden; padding:60px 90px 0; display:flex; gap:34px; align-items:stretch;">
+
+  <div style="flex:0.62; min-height:0; padding-bottom:60px;">
+    <div class="imgframe" style="width:100%; height:100%; border-color:var(--color-neutral-400);">
+      <i class="corner tl" style="--c:var(--color-accent-700)"></i><i class="corner tr" style="--c:var(--color-accent-700)"></i><i class="corner bl" style="--c:var(--color-accent-700)"></i><i class="corner br" style="--c:var(--color-accent-700)"></i>
+      <img src="assets/ris34_razrez_obskaya1.png" alt="Геологический разрез скважины Обская №1" style="width: 454px; height: 931px">
+    </div>
+  </div>
+
+  <div style="flex:1; display:flex; flex-direction:column; justify-content:center;">
+    <div class="kicker" style="color:var(--color-accent-700);">Месторождения-спутники</div>
+    <h2 class="h2" style="margin-bottom:24px;">Обское</h2>
+    <ul class="bul">
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Самое компактное месторождение: блок-кондуктор, всего 3 скважины (~8 км)</span></li>
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Запасы отдельно не выделены — входят в суммарные ~800 млрд м³ по 4 месторождениям</span></li>
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Главный риск — приповерхностный газ: интервалы на 408 м и 448 м (скв. Обская №1), сопротивление сопоставимо с продуктивным пластом</span></li>
+    </ul>
+  </div>
+
+  <div style="flex:0.62; min-height:0; padding-bottom:60px;">
+    <div class="imgframe" style="width:100%; height:100%; border-color:var(--color-neutral-400);">
+      <i class="corner tl" style="--c:var(--color-accent-700)"></i><i class="corner tr" style="--c:var(--color-accent-700)"></i><i class="corner bl" style="--c:var(--color-accent-700)"></i><i class="corner br" style="--c:var(--color-accent-700)"></i>
+      <img src="assets/ris35_soprotivleniya_obskaya1.png" alt="Аномалии сопротивления по скважине Обская №1" style="width: 479px; height: 921px">
+    </div>
+  </div>
+
+  <div class="footerbar"><span>Обское месторождение</span><span>13 / 17</span></div>
+</section>
+
+<section data-label="Запасы и бурение" data-screen-label="14" data-speaker-notes="В работе я свёл количественные данные по всем трём месторождениям в пять диаграмм. По запасам разница между Каменномысским-морем и Северо-Каменномысским — почти в 1,6 раза, и именно она отражена в очерёдности их освоения. Расчётный график бурения охватывает уже весь кластер из семи объектов — суммарно 114 скважин общей длиной 297 километров за 25 лет, с пиком в 2028–2031 годах." style="position:relative; width:100%; height:100%; background:var(--color-bg); color:var(--color-text); font-family:var(--font-body); overflow:hidden; padding:60px 100px 0; display:flex; flex-direction:column;">
+
+  <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:50px; margin-bottom:24px;">
+    <div>
+      <div class="kicker" style="color:var(--color-accent-700);">Сопоставительный анализ</div>
+      <h2 class="h2">Запасы и график бурения</h2>
+    </div>
+    <ul class="bul" style="flex-shrink:0; max-width:1000px; padding-top:4px;">
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Разница КМ-море / Северо-КМ — в 1,6 раза → определяет очерёдность освоения</span></li>
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Кластер (7 объектов): 114 скважин, 297 км, 2025–2049 гг., пик — 2028–2031 гг.</span></li>
+    </ul>
+  </div>
+
+  <div style="flex:1; display:flex; gap:36px; min-height:0; padding-bottom:60px;">
+    <div style="flex:1;">
+      <div class="imgframe" style="width:100%; height:100%; border-color:var(--color-neutral-400);">
+        <i class="corner tl" style="--c:var(--color-accent-700)"></i><i class="corner tr" style="--c:var(--color-accent-700)"></i><i class="corner bl" style="--c:var(--color-accent-700)"></i><i class="corner br" style="--c:var(--color-accent-700)"></i>
+        <img src="assets/ris41_zapasy.png" alt="Запасы газа месторождений" style="width: 816px; height: 765px; object-fit: fill">
+      </div>
+    </div>
+    <div style="flex:1;">
+      <div class="imgframe" style="width:100%; height:100%; border-color:var(--color-neutral-400);">
+        <i class="corner tl" style="--c:var(--color-accent-700)"></i><i class="corner tr" style="--c:var(--color-accent-700)"></i><i class="corner bl" style="--c:var(--color-accent-700)"></i><i class="corner br" style="--c:var(--color-accent-700)"></i>
+        <img src="assets/ris42_grafik_bureniya.png" alt="График бурения скважин по годам" style="width: 821px; height: 768px; object-fit: fill">
+      </div>
+    </div>
+  </div>
+
+  <div class="footerbar"><span>Сопоставительный анализ</span><span>14 / 17</span></div>
+</section>
+
+<section data-label="Природная среда" data-screen-label="15" data-speaker-notes="Диаграмма ледового режима и продолжительности навигации по трём сценариям тяжести сезона показывает, что разброс между лёгкими и тяжёлыми условиями — порядка 45–60 суток. Диаграмма температур многолетнемёрзлых пород по четырём инженерно-геологическим скважинам наглядно подтверждает различие двух типов криорелектов: в прибрежных скважинах температура понижается до минус 4–5 градусов у подошвы разреза, тогда как в островной скважине остаётся около минус одного градуса." style="position:relative; width:100%; height:100%; background:var(--color-bg); color:var(--color-text); font-family:var(--font-body); overflow:hidden; padding:60px 100px 0; display:flex; gap:60px; align-items:stretch;">
+
+  <div style="flex:0.85; display:flex; flex-direction:column; justify-content:center;">
+    <div class="kicker" style="color:var(--color-accent-700);">Сопоставительный анализ</div>
+    <h2 class="h2" style="margin-bottom:24px;">Природная среда — общая для кластера</h2>
+    <ul class="bul">
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Разброс навигации между сценариями: 45–60 суток</span></li>
+      <li><span class="sq" style="background:var(--color-accent-500);"></span><span>Температуры ММП по 4 скважинам подтверждают два типа криорелектов</span></li>
+    </ul>
+    <div class="vyvod" style="margin-bottom:70px;"><b>Вывод:</b> систему снабжения нельзя проектировать по средним показателям</div>
+  </div>
+  <div style="flex:1.3; min-height:0; padding-bottom:60px;">
+    <div class="imgframe" style="width:100%; height:100%; border-color:var(--color-neutral-400);">
+      <i class="corner tl" style="--c:var(--color-accent-700)"></i><i class="corner tr" style="--c:var(--color-accent-700)"></i><i class="corner bl" style="--c:var(--color-accent-700)"></i><i class="corner br" style="--c:var(--color-accent-700)"></i>
+      <img src="assets/ris44_temperatura_mmp.png" alt="Температура многолетнемёрзлых пород по скважинам">
+    </div>
+  </div>
+
+  <div class="footerbar"><span>Сопоставительный анализ</span><span>15 / 17</span></div>
+</section>
+
+<section data-label="Заключение" data-screen-label="16" data-speaker-notes="В заключение — три главных вывода. Первое: природные трудности региона действуют в масштабе всего региона, а не отдельного месторождения. Второе: три рассмотренных месторождения различаются не столько геологией, сколько степенью изученности и готовностью к освоению. И третье, самое важное: необходимые инженерные решения уже отработаны и полностью локализованы внутри страны. Ключевым ограничивающим фактором дальнейшего освоения региона сегодня выступает не природная среда и не технологический потенциал, а устойчивость организационно-экономических условий реализации проекта. Спасибо за внимание, готов ответить на вопросы." style="position:relative; width:100%; height:100%; background:var(--color-accent-900); color:#f2f2f3; font-family:var(--font-body); overflow:hidden; padding:110px 130px; display:flex; flex-direction:column;">
+
+  <div class="kicker" style="color:var(--color-accent-200);">Итоги</div>
+  <h2 class="h2" style="color:#f2f2f3; margin-bottom:56px;">Выводы</h2>
+
+  <div style="flex:1; display:flex; gap:56px;">
+    <div style="flex:1; border-top:2px solid var(--color-accent-300); padding-top:28px; display:flex; flex-direction:column; gap:16px;">
+      <div style="font-family:var(--font-heading); font-size:64px; font-weight:700; color:var(--color-accent-300);">01</div>
+      <div style="font-size:28px; line-height:1.5;">Природные трудности региона — общие для всего кластера, а не отдельного месторождения → единые технические решения</div>
+    </div>
+    <div style="flex:1; border-top:2px solid var(--color-accent-300); padding-top:28px; display:flex; flex-direction:column; gap:16px;">
+      <div style="font-family:var(--font-heading); font-size:64px; font-weight:700; color:var(--color-accent-300);">02</div>
+      <div style="font-size:28px; line-height:1.5;">Месторождения различаются не геологией, а степенью изученности и готовности к освоению</div>
+    </div>
+    <div style="flex:1; border-top:2px solid var(--color-accent-300); padding-top:28px; display:flex; flex-direction:column; gap:16px;">
+      <div style="font-family:var(--font-heading); font-size:64px; font-weight:700; color:var(--color-accent-300);">03</div>
+      <div style="font-size:28px; line-height:1.5;">Инженерные решения локализованы внутри страны. Ключевое ограничение — не природа и не технологии, а устойчивость организационно-экономических условий реализации проекта</div>
+    </div>
+  </div>
+
+</section>
+
+<section data-label="Спасибо" data-screen-label="17" data-speaker-notes="" style="position:relative; width:100%; height:100%; overflow:hidden; font-family:var(--font-body); color:#f2f2f3;">
+
+  <img src="assets/bg-sea-2.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;">
+  <div style="position:absolute; inset:0; background:var(--color-accent-900); mix-blend-mode:color; opacity:0.7;"></div>
+  <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,17,18,0.65) 0%, rgba(15,17,18,0.35) 50%, rgba(15,17,18,0.75) 100%);"></div>
+
+  <div style="position:relative; z-index:1; width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:28px;">
+    <h1 style="font-family:var(--font-heading); font-weight:700; font-size:72px; margin:0; letter-spacing:0.02em; text-shadow:0 2px 18px rgba(0,0,0,0.5);">Спасибо за внимание!</h1>
+    <div style="font-size:36px; opacity:.9; text-shadow:0 1px 10px rgba(0,0,0,0.45);">Вопросы?</div>
+  </div>
+
+</section>
+
+</x-import>
+
+</x-dc>
+</body>
+</html>
